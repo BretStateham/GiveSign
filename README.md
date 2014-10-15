@@ -108,7 +108,11 @@ The steps covered here are specific to configuring a Spark Core using the Comman
 
 	> **Note:** You can also refer to the documentation for [Connecting to the Spark Core via USB](http://docs.spark.io/connect/#connecting-your-core-connect-over-usb)
 
-1. Connect the Spark Core to your computer via the USB, and ensure that the Spark Core is in **["Listening Mode"](http://docs.spark.io/connect/#connecting-your-core-listening-mode)** by confirming that the RGB LED on the board is flashing blue.  If it isn't, [hold the **"MODE"** button on the Spark Core for about three seconds until it begins flashing blue](https://vine.co/v/hFHlpBDELeU):
+1. Connect the Spark Core to your computer via the USB.  ***Note that due to some poor planning during the circuit board layout, the capacitors will likely prevent you from connecting the cable.  You can tilt the Spark Core up slightly in it's socket (or remove it all together) to make the USB connection.***:
+
+	![04005-USBCapacitorBlockage](images/04005-usbcapacitorblockage.png?raw=true "Cap USB Blockage and Spark Core Tilt")
+
+1. Ensure that the Spark Core is in **["Listening Mode"](http://docs.spark.io/connect/#connecting-your-core-listening-mode)** by confirming that the RGB LED on the board is flashing blue.  If it isn't, [hold the **"MODE"** button on the Spark Core for about three seconds until it begins flashing blue](https://vine.co/v/hFHlpBDELeU):
 
 	![02005-ListeningMode](images/02005-listeningmode.png?raw=true "Listening Mode")
 
@@ -146,7 +150,7 @@ The steps covered here are specific to configuring a Spark Core using the Comman
 
 ### <span style="color: #090">IF YOU ALREADY HAVE THE LATEST VERSION OF THE SPARK-CLI INSTALLED YOU CAN SKIP THIS TASK</span> ###
 
-The S**park Command Line Interface (Spark-CLI)** is a **Node.js** application that allows you to manage your spark cores, and the code that runs on them.  The Spark-CLI source is available from GitHub at https://github.com/spark/spark-cli and you can read the docs here: http://docs.spark.io/cli/
+The **Spark Command Line Interface (Spark-CLI)** is a **Node.js** application that allows you to manage your spark cores, and the code that runs on them.  The Spark-CLI source is available from GitHub at https://github.com/spark/spark-cli and you can read the docs here: http://docs.spark.io/cli/
 
 1.  First, ensure that you have Node.js installed.  You can install it from here: http://nodejs.org/
 
@@ -896,7 +900,7 @@ You can call the **"showPercent"** function on the spark a number of ways:
 
 We will cover the first three here and leave the custom app implementation to you:
 
-1. Connect the 12VDC Power Supply to the Spark Core circuit in the enclosure:
+1. Connect the 12VDC Power Supply to the Spark Core circuit in the enclosure, and wait until it is **"[breathing cyan](https://vine.co/v/OmOAlMg17Y9)"**:
 
 	![07010-ConnectPowerSupply](images/07010-connectpowersupply.png?raw=true "Connect Power Supply")
 
@@ -910,7 +914,7 @@ We will cover the first three here and leave the custom app implementation to yo
 
 	or 
 
-	`spark call <core name. showPercent 50`
+	`spark call <core name> showPercent 50`
 
 	for example: 
 	

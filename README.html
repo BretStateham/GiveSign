@@ -136,7 +136,11 @@ body{font-family:helvetica, arial, freesans, clean, sans-serif;color:#333;line-h
 <blockquote>
 <p><strong>Note:</strong> You can also refer to the documentation for <a href="http://docs.spark.io/connect/#connecting-your-core-connect-over-usb">Connecting to the Spark Core via USB</a></p>
 </blockquote></li>
-<li><p>Connect the Spark Core to your computer via the USB, and ensure that the Spark Core is in <strong><a href="http://docs.spark.io/connect/#connecting-your-core-listening-mode">&quot;Listening Mode&quot;</a></strong> by confirming that the RGB LED on the board is flashing blue.  If it isn't, <a href="https://vine.co/v/hFHlpBDELeU">hold the <strong>&quot;MODE&quot;</strong> button on the Spark Core for about three seconds until it begins flashing blue</a>:</p>
+<li><p>Connect the Spark Core to your computer via the USB.  <strong><em>Note that due to some poor planning during the circuit board layout, the capacitors will likely prevent you from connecting the cable.  You can tilt the Spark Core up slightly in it's socket (or remove it all together) to make the USB connection.</em></strong>:</p>
+
+<p><img src="images/04005-usbcapacitorblockage.png?raw=true" alt="04005-USBCapacitorBlockage" title="Cap USB Blockage and Spark Core Tilt">
+</p></li>
+<li><p>Ensure that the Spark Core is in <strong><a href="http://docs.spark.io/connect/#connecting-your-core-listening-mode">&quot;Listening Mode&quot;</a></strong> by confirming that the RGB LED on the board is flashing blue.  If it isn't, <a href="https://vine.co/v/hFHlpBDELeU">hold the <strong>&quot;MODE&quot;</strong> button on the Spark Core for about three seconds until it begins flashing blue</a>:</p>
 
 <p><img src="images/02005-listeningmode.png?raw=true" alt="02005-ListeningMode" title="Listening Mode">
 </p></li>
@@ -175,7 +179,7 @@ body{font-family:helvetica, arial, freesans, clean, sans-serif;color:#333;line-h
 
 <h3 id="span_stylecolor_090IF_YOU_ALREADY_HAVE_THE_LATEST_VERSION_OF_THE_SPARK-CLI_INSTALLED_YOU_CAN_SKIP_THIS_TASKspan"><span style="color: #090">IF YOU ALREADY HAVE THE LATEST VERSION OF THE SPARK-CLI INSTALLED YOU CAN SKIP THIS TASK</span></h3>
 
-<p>The S<strong>park Command Line Interface (Spark-CLI)</strong> is a <strong>Node.js</strong> application that allows you to manage your spark cores, and the code that runs on them.  The Spark-CLI source is available from GitHub at <a href="https://github.com/spark/spark-cli">https://github.com/spark/spark-cli</a> and you can read the docs here: <a href="http://docs.spark.io/cli/">http://docs.spark.io/cli/</a></p>
+<p>The <strong>Spark Command Line Interface (Spark-CLI)</strong> is a <strong>Node.js</strong> application that allows you to manage your spark cores, and the code that runs on them.  The Spark-CLI source is available from GitHub at <a href="https://github.com/spark/spark-cli">https://github.com/spark/spark-cli</a> and you can read the docs here: <a href="http://docs.spark.io/cli/">http://docs.spark.io/cli/</a></p>
 
 <ol>
 <li><p>First, ensure that you have Node.js installed.  You can install it from here: <a href="http://nodejs.org/">http://nodejs.org/</a></p>
@@ -930,7 +934,7 @@ spark cloud list
 <p>We will cover the first three here and leave the custom app implementation to you:</p>
 
 <ol>
-<li><p>Connect the 12VDC Power Supply to the Spark Core circuit in the enclosure:</p>
+<li><p>Connect the 12VDC Power Supply to the Spark Core circuit in the enclosure, and wait until it is <strong>&quot;<a href="https://vine.co/v/OmOAlMg17Y9">breathing cyan</a>&quot;</strong>:</p>
 
 <p><img src="images/07010-connectpowersupply.png?raw=true" alt="07010-ConnectPowerSupply" title="Connect Power Supply">
 </p></li>
@@ -944,7 +948,7 @@ spark cloud list
 
 <p>or </p>
 
-<p><code>spark call &lt;core name. showPercent 50</code></p>
+<p><code>spark call &lt;core name&gt; showPercent 50</code></p>
 
 <p>for example: </p>
 
