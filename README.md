@@ -27,6 +27,8 @@ The Spark Core is inserted in a socket on a circuit board that is inside the blu
 
 ![cir002-Layout](images/cir002-layout.png?raw=true "Layout")
 
+1. There is a schematic of the circuit at the end of this document: [Circuit Schematic](#CircuitSchematic)
+
 ---
 
 <a name="tasks" />
@@ -929,3 +931,8 @@ We will cover the first three here and leave the custom app implementation to yo
 1. To create a custom app (A Windows or Windows Phone App, Web App, iOS, Android, etc) you can read up on the **"[Spark REST Api](http://docs.spark.io/api)"** and implement your client code accordingly.
 
 ---
+
+<a name="CircuitSchematic" />
+## Circuit Schematic ##
+
+![cir001-schematic](images/cir001-schematic.png?raw=true "Schematic")
