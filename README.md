@@ -119,6 +119,8 @@ The steps covered here are specific to configuring a Spark Core using the Comman
 
 1. Open your computer's **"Device Manager"**.  Under **"Other Devices"** you should see the **"Spark Core with WiFi"**.  Right click on the **"Spark Core with WiFi"** and select **"Update Driver Software..."** from the pop-up menu: 
 
+	> **Note:** If you are doing this from a Windows 10 preview machine, the device may not show up under "Other Devices" but rather under "Ports" with a unique name like **"USB Port on COM4"** (your name may vary).  If you see that, update the driver on that device as described below.
+
 	![02010-SparkInOtherDevices](images/02010-sparkinotherdevices.png?raw=true "Spark in Other Devices")
 
 1. Select the **"Browse my computer for driver software"** option:
