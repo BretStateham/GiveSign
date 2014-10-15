@@ -885,6 +885,8 @@ The `showPercent(string)` method takes a single string "command" that represents
 
 The showPercent function only applies the new value if it is different from the current value.  When a new value is receive it plays an animation (cycles the rainbow colors, then does a chase of white dots) before showing the new value. 
 
+The server sends updates to the Spark Core about once every 10 seconds.  Be aware of that when you are testing.  If you set a value using the REST api, it may be subsequently wiped out a an update from the server.  In fact, this is pretty much guaranteed to happen if things are working right. 
+
 You can call the **"showPercent"** function on the spark a number of ways:
 
 - Spark-CLI
