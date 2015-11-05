@@ -14,7 +14,7 @@ The give sign consists of
 
 1. Four base plates (one for each letter)
 1. Four Letters (G,I,V,E) with LEDs attached
-1. Spark Core and Circut Board (should be attached to "G" base plate)
+1. Spark Core and Circuit Board (should be attached to "G" base plate)
 1. 12V/5A DC Power Supply with 2.1mm male plug. 
 1. Spare 4 x 1/2 panhead screws in case they are needed to secure LEDs (not pictured) 
 
